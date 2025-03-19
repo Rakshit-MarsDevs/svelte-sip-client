@@ -81,5 +81,6 @@ Before running the application, gather the following Twilio configuration values
 - Copy `.env.example` to `.env` and fill in all required credentials.
 - The **default server port** is `3000`.
 - This is a **basic VoIP calling app** with minimal UI and full-stack functionality.
+- The main code is in **develop** branch.
 
 ---
