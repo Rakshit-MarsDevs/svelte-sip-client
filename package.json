@@ -1,30 +1,40 @@
 {
-	"name": "svelte-sip-client",
-	"private": true,
-	"version": "0.0.1",
-	"type": "module",
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-auto": "^4.0.0",
-		"@sveltejs/kit": "^2.16.0",
-		"@sveltejs/vite-plugin-svelte": "^5.0.0",
-		"@testing-library/svelte": "^5.2.7",
-		"cypress": "^14.1.0",
-		"svelte": "^5.0.0",
-		"svelte-check": "^4.0.0",
-		"typescript": "^5.0.0",
-		"vite": "^6.0.0",
-		"vitest": "^3.0.8"
-	},
-	"dependencies": {
-		"sip.js": "^0.21.2",
-		"socket.io-client": "^4.8.1"
-	}
+  "name": "svelte-sip-client",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "package": "vite package",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+	"smui-theme": "smui-theme compile static/smui.css -i src/theme"
+  },
+  "devDependencies": {
+    "@smui/button": "^6.1.0",
+    "@smui/layout-grid": "^6.1.0",
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-node": "^1.0.0-next.73",
+    "@sveltejs/kit": "next",
+    "sass": "^1.49.9",
+    "smui-theme": "^6.1.3",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.2.6",
+    "svelte-preprocess": "^4.10.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.3.0",
+    "@material/dom": "^14.0.0",
+    "@twilio/voice-sdk": "^2.1.1",
+    "axios": "^0.27.2",
+    "events": "^3.3.0",
+    "svelte-material-ui": "^6.1.3",
+    "twilio": "^3.75.0",
+    "util": "^0.10.3"
+  }
 }
