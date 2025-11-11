@@ -1,0 +1,8 @@
+/* Missing base styles */
+body {
+  font-family: Arial;
+}
+
+/* Broken CSS - missing closing brace
+.container {
+  width: 100%;
